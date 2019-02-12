@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G65" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Next_Evolution" representedClassName="Next_Evolution" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="num" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pokemondex" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonDex" inverseName="nextEv" inverseEntity="PokemonDex" syncable="YES"/>
+    </entity>
+    <entity name="PokemonDex" representedClassName="PokemonDex" syncable="YES" codeGenerationType="class">
+        <attribute name="candy" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="image" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="num" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="weight" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="nextEv" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Next_Evolution" inverseName="pokemondex" inverseEntity="Next_Evolution" syncable="YES"/>
+        <relationship name="types" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Type" inverseName="pokemondex" inverseEntity="Type" syncable="YES"/>
+        <relationship name="weaknessespok" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Weaknesses" inverseName="pokemondex" inverseEntity="Weaknesses" syncable="YES"/>
+    </entity>
+    <entity name="Type" representedClassName="Type" syncable="YES" codeGenerationType="class">
+        <attribute name="types" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pokemondex" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonDex" inverseName="types" inverseEntity="PokemonDex" syncable="YES"/>
+    </entity>
+    <entity name="Weaknesses" representedClassName="Weaknesses" syncable="YES" codeGenerationType="class">
+        <attribute name="weaknesses" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pokemondex" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PokemonDex" inverseName="weaknessespok" inverseEntity="PokemonDex" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PokemonDex" positionX="-63" positionY="-18" width="128" height="195"/>
+        <element name="Type" positionX="-54" positionY="36" width="128" height="75"/>
+        <element name="Next_Evolution" positionX="-36" positionY="45" width="128" height="90"/>
+        <element name="Weaknesses" positionX="-18" positionY="81" width="128" height="75"/>
+    </elements>
+</model>
