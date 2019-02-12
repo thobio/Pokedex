@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.7.3)
+  - MapleBacon (5.2)
+  - Neon (0.4.0)
+  - ReachabilitySwift (4.3.0)
+  - Skeleton (0.2.2)
+  - SwiftyJSON (4.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - MapleBacon
+  - Neon
+  - ReachabilitySwift
+  - Skeleton
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - MapleBacon
+    - Neon
+    - ReachabilitySwift
+    - Skeleton
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  MapleBacon: c2ddea11bf7da374607d2ea405462ecfae96efab
+  Neon: 7fb5a9327e7e57911843f608e08f4893a74deaf9
+  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  Skeleton: ad6bff17deb4c8a1e037140a37a817bd6dcade4c
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+
+PODFILE CHECKSUM: 6f0acb0bd476ba2c373c46e5a432cfb5db55c08f
+
+COCOAPODS: 1.5.3
