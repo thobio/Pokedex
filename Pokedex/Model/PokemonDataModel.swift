@@ -24,6 +24,6 @@ class PokemonDataModel {
 }
 
 class nextEvolution {
-    var num:Int = 0
+    var num:String?
     var name:String?
 }

@@ -17,16 +17,20 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     @IBOutlet var tableViews: UITableView!
     var pokemonList : [PokemonDataModel] = []
     var pokemonSortedList : [PokemonDataModel] = []
-    var candyTemp : String?
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    let pokemonCURD = PokemonListCURD()
     
     //MARK: - viewLoad
-    /***************************************************************/
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.transparentNavigationBar()
-         
-        getPokemonData(url: "https://raw.githubusercontent.com/Biuni/PokemonGo-pokedex/master/pokedex.json")
+        if (UserDefaults.standard.bool(forKey: "firstUse")){
+            pokemonSortedListFunction()
+        }else{
+            getPokemonData(url: "https://raw.githubusercontent.com/Biuni/PokemonGo-pokedex/master/pokedex.json")
+            UserDefaults.standard.set(true, forKey: "firstUse")
+        }
+        
         self.tableViews.dataSource = self
         self.tableViews.delegate = self
     }
@@ -36,9 +40,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
+    
     //MARK: - Networking
-    /***************************************************************/
-    //Write the getPokemonData method here:
+    
     func getPokemonData(url:String) {
         Alamofire.request(url, method: .get, parameters:nil, encoding: URLEncoding.default, headers:nil).responseJSON { (response) in
             if response.result.isSuccess {
@@ -50,76 +54,17 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             }
         }
     }
+    
     //MARK: - JSON Parsing
-    /***************************************************************/
-    //Write the updatePokemonData method here:
+    
     func updatePokemonData(json: JSON){
         let pokemonJSON = json["pokemon"]
-        let context = appDelegate.persistentContainer.viewContext
-        for i in 0..<pokemonJSON.count {
-            let pokemon = pokemonJSON[i]
-            let newPokemon = PokemonDex(context: context)
-            
-            let pokemonDataModel = PokemonDataModel()
-            pokemonDataModel.id = pokemon["id"].intValue
-            pokemonDataModel.name = pokemon["name"].stringValue
-            pokemonDataModel.image = pokemon["img"].stringValue
-            pokemonDataModel.candy = pokemon["candy"].stringValue
-            pokemonDataModel.num = pokemon["num"].stringValue
-            
-            newPokemon.id = Int16(pokemon["id"].intValue)
-            newPokemon.name = pokemon["name"].stringValue
-            newPokemon.image = pokemon["img"].stringValue
-            newPokemon.candy = pokemon["candy"].stringValue
-            newPokemon.num = pokemon["num"].stringValue
-          
-            
-                for j in 0..<pokemon["type"].count {
-                    
-                    pokemonDataModel.type.append(pokemon["type"][j].stringValue)
-                    
-                    let typesPoke = Type(context: context)
-                    typesPoke.types = pokemon["type"][j].stringValue
-                    newPokemon.addToTypes(typesPoke)
-                    
-                }
-            pokemonDataModel.height = pokemon["height"].stringValue
-            pokemonDataModel.weight = pokemon["weight"].stringValue
-            
-            newPokemon.weight = pokemon["weight"].stringValue
-            newPokemon.height = pokemon["height"].stringValue
-            
-                for k in 0..<pokemon["weaknesses"].count {
-                    
-                    pokemonDataModel.weaknesses.append(pokemon["weaknesses"][k].stringValue)
-                    
-                    let weaknesses = Weaknesses(context: context)
-                    weaknesses.weaknesses = pokemon["weaknesses"][k].stringValue
-                    newPokemon.addToWeaknessespok(weaknesses)
-                    
-                }
-            let pokemonNextEvolution = pokemon["next_evolution"]
-                for l in 0..<pokemonNextEvolution.count {
-                    
-                    let nextEvolutions = nextEvolution()
-                    nextEvolutions.num = pokemonNextEvolution[l]["num"].intValue
-                    nextEvolutions.name = pokemonNextEvolution[l]["name"].stringValue
-                    pokemonDataModel.nextEvolutions?.append(nextEvolutions)
-                    
-                    let evolutonsPokemon = Next_Evolution(context: context)
-                    evolutonsPokemon.num = pokemonNextEvolution[l]["num"].stringValue
-                    evolutonsPokemon.name = pokemonNextEvolution[l]["name"].stringValue
-                    
-                    newPokemon.addToNextEv(evolutonsPokemon)
-                }
-            pokemonList.append(pokemonDataModel)
-            appDelegate.saveContext()
-        }
+        pokemonCURD.createFunc(pokemonJSON: pokemonJSON)
         pokemonSortedListFunction()
     }
+    
     //MARK:- TableViewDataSoure and TableViewDelegete
-    /******************************************************************/
-    //Write the scrollViewDidScroll method here :
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let offset = scrollView.contentOffset.y
         if(offset > 10){
@@ -131,11 +76,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         }
     }
-    //Write the numberOfRowsInSection method here :
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pokemonSortedList.count
     }
-    //Write the cellForRowAt method here :
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! ListTableViewCell
@@ -153,27 +96,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         self.performSegue(withIdentifier: "details", sender: self)
         tableViews.reloadData()
     }
-    //Write the pokemonSortedListFunction method here:
+    
+    //MARK:- GroupPokemonList
+    
     func pokemonSortedListFunction(){
-        for i in 0..<self.pokemonList.count {
-            let pokemons = self.pokemonList[i]
-            if self.candyTemp != nil {
-                if pokemons.candy == self.candyTemp {
-                    // nothing to add here
-                }
-                else if pokemons.candy == "None" {
-                    self.pokemonSortedList.append(pokemons)
-                }else{
-                    self.pokemonSortedList.append(pokemons)
-                    self.candyTemp = pokemons.candy
-                }
-            }else{
-                self.candyTemp = pokemons.candy
-                self.pokemonSortedList.append(pokemons)
-            }
-        }
+        pokemonList = pokemonCURD.readFunc()
+        self.pokemonSortedList = pokemonCURD.groupPokeList(pokeList: pokemonList)
     }
-    //segue
+    
+    //MARK:- Segue
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "details"){
             let vc = segue.destination as! DetailsViewController

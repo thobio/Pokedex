@@ -16,6 +16,7 @@ class DetailsViewController: UIViewController {
     var candy :String?
     var id :Int = 0
     var pokemons : [PokemonDex] = []
+    let pokemonDetail = PokemonDetailsCURD()
     
     @IBOutlet var viewOnTable: UIView!
     @IBOutlet var pokemonImage: UIImageView!
@@ -25,15 +26,7 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = UIColor.black
-        let context = appDelegate.persistentContainer.viewContext
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "PokemonDex")
-        request.predicate = NSPredicate(format: "candy = %@", candy!)
-        do{
-            let result = try context.fetch(request)
-            pokemons = result as! [PokemonDex]
-        } catch {
-          print("Failed")
-        }
+        pokemons = pokemonDetail.readFunction(candy: candy!, vc: self)
         pokemonsDisplay()
     }
 
@@ -42,7 +35,11 @@ class DetailsViewController: UIViewController {
             if pokemon.id == id {
                 self.pokemonName.text = pokemon.name
                 self.pokemonImage.setImage(with: URL(string: pokemon.image!))
+                pokemonDetail.typesReadData(data: pokemon.types!,vc: self)
+                
             }
         }
     }
+    
+
 }

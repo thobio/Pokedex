@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -138,11 +138,11 @@
 		352DFFA7C96E4CCAC52C154006BC9FCA /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		37B5396BB5D3714FE08F97D7AA15E6B9 /* Skeleton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Skeleton-dummy.m"; sourceTree = "<group>"; };
 		3E99B060DADE723ABDAC67C89843A765 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4033E272AB6C862155E279E4FC18B308 /* MapleBacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapleBacon.framework; path = MapleBacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4033E272AB6C862155E279E4FC18B308 /* MapleBacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapleBacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42EE3F8A26A8F49489B11D57320BF68C /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		432178AEFBD590E15095D451F368F30A /* Pods-Pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex.debug.xcconfig"; sourceTree = "<group>"; };
 		44505C7BE57D8B9999007ADE9E4F9ABE /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		46B79CE79E6192147ED218D649F529AB /* Neon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Neon.framework; path = Neon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46B79CE79E6192147ED218D649F529AB /* Neon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Neon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		47AA20BC792DE335147B919BACF85309 /* NeonAnchorable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonAnchorable.swift; path = Source/NeonAnchorable.swift; sourceTree = "<group>"; };
 		4A2FF5D358C59AD685CAEA4A49D8DB32 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
 		4C70E65C0C9C3C2771AD88B8074DC00B /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		5F62003B464E6526D6FA1F71F782CF73 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		5FAB6F60EAD401490557AC179D87F4FB /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		6362D5239CA15B5FA55CD5426541DAA4 /* Pods-Pokedex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex-dummy.m"; sourceTree = "<group>"; };
-		668F1C79BB71D57066B1483CFD9F9EC7 /* Skeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Skeleton.framework; path = Skeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		668F1C79BB71D57066B1483CFD9F9EC7 /* Skeleton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Skeleton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		674BDBC2FC4977E25FE425FA7E5FCB55 /* Pods-Pokedex-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pokedex-resources.sh"; sourceTree = "<group>"; };
 		6B58D931FDF7923F24724741DA094F5B /* UIButton+MapleBacon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+MapleBacon.swift"; path = "MapleBacon/Extensions/UIButton+MapleBacon.swift"; sourceTree = "<group>"; };
 		6D31510940D107ECE529CD0468A94E5A /* ImageFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFetcher.swift; path = MapleBacon/Core/ImageFetcher.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 		70B7C8A747B0D3C1866AAFB87B18D4C3 /* ReachabilitySwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.xcconfig; sourceTree = "<group>"; };
 		737BCDDFB7A8E7541CE96AF278B259B7 /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = MapleBacon/Core/Cache.swift; sourceTree = "<group>"; };
 		75D7CD21C2654653C11F8D40C2C4B742 /* MapleBacon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapleBacon.modulemap; sourceTree = "<group>"; };
-		76068C0DCC927EF5C13D6DFB2AD34A5E /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76068C0DCC927EF5C13D6DFB2AD34A5E /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AA8FC57764E9577CA25AFE700170D3 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
 		7BBB21D55C6628CE61080C91D8E5FD42 /* Skeleton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Skeleton-umbrella.h"; sourceTree = "<group>"; };
 		7EC90D29D452A2398A442559DE9053A6 /* Neon.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Neon.xcconfig; sourceTree = "<group>"; };
@@ -174,14 +174,14 @@
 		89A1D4CE31DF96CB5589559189E54CCC /* GradientsOwner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientsOwner.swift; path = Skeleton/GradientsOwner.swift; sourceTree = "<group>"; };
 		8E4F54530CBDB926AE4DD02B3436A77B /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		91EDC4175F3B2504CF99F75A13CCBECA /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93DC12CB303E8ED053E57742DF529860 /* GradientContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientContainerView.swift; path = Skeleton/GradientContainerView.swift; sourceTree = "<group>"; };
 		941BE76038AD3318BFE09AF6EE813086 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94903C84F4560FA491A93AA66DCAA4E0 /* MapleBacon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapleBacon.swift; path = MapleBacon/Core/MapleBacon.swift; sourceTree = "<group>"; };
 		97344A6FD8062E43C6E434F25C31D4E1 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		9738AED6C3ACE0E4161121C79035B733 /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
 		98CBAC1AAB6C51276C2509B86184CF7D /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		9AB4CCBB37AE591C1218A7F51AFDE469 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AB4CCBB37AE591C1218A7F51AFDE469 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2C51C505BD4C871733808D1C8BE796A /* Pods-Pokedex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex-umbrella.h"; sourceTree = "<group>"; };
 		A2D6348EF662EEE6554479841132CFB1 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
 		A38E354847F060829ABE05740D5351D5 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
@@ -192,8 +192,8 @@
 		B8957602D28C32E8C7938D6295907912 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBF56EE2A011A7B10B1AFC9E96C2E751 /* CAGradientLayer+Slide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAGradientLayer+Slide.swift"; path = "Skeleton/CAGradientLayer+Slide.swift"; sourceTree = "<group>"; };
 		C3E5F9CDBFF895A4E15466768B221785 /* UIImageView+MapleBacon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+MapleBacon.swift"; path = "MapleBacon/Extensions/UIImageView+MapleBacon.swift"; sourceTree = "<group>"; };
-		C4756F6E935856FB5A4571C3958E4575 /* Pods_Pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pokedex.framework; path = "Pods-Pokedex.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5525C03DDB7D4F4C8177D08259282B7 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Reachability.framework; path = ReachabilitySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4756F6E935856FB5A4571C3958E4575 /* Pods_Pokedex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5525C03DDB7D4F4C8177D08259282B7 /* Reachability.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C81D1BC3DB6484F1D9E804A717180DDF /* NeonFrameable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NeonFrameable.swift; path = Source/NeonFrameable.swift; sourceTree = "<group>"; };
 		C985DC7EE52018DAA3094FD02A6EE1E5 /* Neon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Neon.modulemap; sourceTree = "<group>"; };
 		D4F1F07586702E8445260AB454C83739 /* Pods-Pokedex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex.modulemap"; sourceTree = "<group>"; };
@@ -352,7 +352,6 @@
 				C3E5F9CDBFF895A4E15466768B221785 /* UIImageView+MapleBacon.swift */,
 				D5ACD2625D43E592B551F38B7053201C /* Support Files */,
 			);
-			name = MapleBacon;
 			path = MapleBacon;
 			sourceTree = "<group>";
 		};
@@ -378,7 +377,6 @@
 				029BC34EAAD669BA61FDFB0A401A48EB /* Validation.swift */,
 				AC34BB0929F03E94996D5973547B962F /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -399,7 +397,6 @@
 				04EAC850085CF76637D24F5B1D7BD650 /* SwiftyJSON.swift */,
 				D074D4C29318B5573347A733908EEFD7 /* Support Files */,
 			);
-			name = SwiftyJSON;
 			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
@@ -409,7 +406,6 @@
 				E8581262AE114202A9403CBB08E1427B /* Reachability.swift */,
 				EEE0653E3A80A7CB80831B754FF2622D /* Support Files */,
 			);
-			name = ReachabilitySwift;
 			path = ReachabilitySwift;
 			sourceTree = "<group>";
 		};
@@ -467,7 +463,6 @@
 				8070EB0A555FC3536B5C190DB60CD290 /* GradientView.swift */,
 				F0A8BBCFD08D9B4F2C1B50FBD6D691BF /* Support Files */,
 			);
-			name = Skeleton;
 			path = Skeleton;
 			sourceTree = "<group>";
 		};
@@ -482,7 +477,6 @@
 				0C701EE6774750B132FCC56F7BB686B6 /* NeonGroupable.swift */,
 				20F7DEFF89DC233CE7634A12D1FF3BCB /* Support Files */,
 			);
-			name = Neon;
 			path = Neon;
 			sourceTree = "<group>";
 		};
@@ -726,7 +720,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1010;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -943,6 +937,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -964,11 +959,7 @@
 				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
 				PRODUCT_MODULE_NAME = Reachability;
 				PRODUCT_NAME = Reachability;
@@ -1001,11 +992,7 @@
 				INFOPLIST_FILE = "Target Support Files/Neon/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Neon/Neon.modulemap";
 				PRODUCT_MODULE_NAME = Neon;
 				PRODUCT_NAME = Neon;
@@ -1039,11 +1026,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex/Pods-Pokedex.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1078,11 +1061,7 @@
 				INFOPLIST_FILE = "Target Support Files/Neon/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Neon/Neon.modulemap";
 				PRODUCT_MODULE_NAME = Neon;
 				PRODUCT_NAME = Neon;
@@ -1114,11 +1093,7 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1151,11 +1126,7 @@
 				INFOPLIST_FILE = "Target Support Files/MapleBacon/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MapleBacon/MapleBacon.modulemap";
 				PRODUCT_MODULE_NAME = MapleBacon;
 				PRODUCT_NAME = MapleBacon;
@@ -1189,11 +1160,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex/Pods-Pokedex.modulemap";
 				OTHER_LDFLAGS = "";
@@ -1228,11 +1195,7 @@
 				INFOPLIST_FILE = "Target Support Files/Skeleton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Skeleton/Skeleton.modulemap";
 				PRODUCT_MODULE_NAME = Skeleton;
 				PRODUCT_NAME = Skeleton;
@@ -1264,11 +1227,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
 				PRODUCT_NAME = SwiftyJSON;
@@ -1301,11 +1260,7 @@
 				INFOPLIST_FILE = "Target Support Files/Skeleton/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Skeleton/Skeleton.modulemap";
 				PRODUCT_MODULE_NAME = Skeleton;
 				PRODUCT_NAME = Skeleton;
@@ -1338,11 +1293,7 @@
 				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
 				PRODUCT_MODULE_NAME = Reachability;
 				PRODUCT_NAME = Reachability;
@@ -1437,11 +1388,7 @@
 				INFOPLIST_FILE = "Target Support Files/MapleBacon/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MapleBacon/MapleBacon.modulemap";
 				PRODUCT_MODULE_NAME = MapleBacon;
 				PRODUCT_NAME = MapleBacon;
@@ -1473,11 +1420,7 @@
 				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
 				PRODUCT_MODULE_NAME = Alamofire;
 				PRODUCT_NAME = Alamofire;
@@ -1509,11 +1452,7 @@
 				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				PRODUCT_MODULE_NAME = SwiftyJSON;
 				PRODUCT_NAME = SwiftyJSON;
