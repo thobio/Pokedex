@@ -35,11 +35,25 @@ class DetailsViewController: UIViewController {
             if pokemon.id == id {
                 self.pokemonName.text = pokemon.name
                 self.pokemonImage.setImage(with: URL(string: pokemon.image!))
-                pokemonDetail.typesReadData(data: pokemon.types!,vc: self)
-                
+                let data = pokemonDetail.typesReadData(data: pokemon.types!)
+                //typeDisplayLabel(dataType: data)
             }
         }
     }
     
+    //TODO:- need to complete it
+    func typeDisplayLabel(dataType:[String]) {
+        let mainStackView = UIStackView()
+        mainStackView.alignment = .center
+        mainStackView.distribution = .equalSpacing
+        mainStackView.backgroundColor = .black
+        for i in 0..<dataType.count {
+            let labelText = UILabel()
+            labelText.text = dataType[i]
+            labelText.backgroundColor = UIColor.red
+            mainStackView.addArrangedSubview(labelText)
+        }
+        self.viewOnTable.addSubview(mainStackView)
+    }
 
 }

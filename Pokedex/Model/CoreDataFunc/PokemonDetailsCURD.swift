@@ -39,11 +39,13 @@ class PokemonDetailsCURD {
         
     }
     
-    func typesReadData(data:NSSet,vc:UIViewController){
+    func typesReadData(data:NSSet) -> [String]{
         var dataOftype : [String] = []
         for types in  data{
             let value = types as! NSManagedObject
             dataOftype.append((value.value(forKey: "types") as! String))
         }
+        return dataOftype
     }
+    
 }
